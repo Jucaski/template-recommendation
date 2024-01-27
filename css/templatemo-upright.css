@@ -127,7 +127,7 @@ hr { border-top: 4px solid #CCC; }
 .navbar-toggler { display: none; }
 
 .tm-brand-box {
-	width: 240px;
+	width: 260px;
     height: 180px;
     background: #006699;
     color: white;
@@ -135,6 +135,9 @@ hr { border-top: 4px solid #CCC; }
     align-items: center;
 	justify-content: center;
 	margin-bottom: 100px;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 #tm-main-nav {
