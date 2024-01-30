@@ -7,7 +7,7 @@ https://templatemo.com/tm-555-upright
 
 	Color Codes
 	=============
-	Primary blue: #b70000
+	Primary blue: var(--red)
 	Gray text: #666666
 	Light gray nav button bg: #F2F2F2;
 
@@ -17,33 +17,38 @@ https://templatemo.com/tm-555-upright
 	
 */
 
+:root {
+  --red: #ee1c25;
+  --white: #faf0e6;
+}
 html, body { overflow-x: hidden; }
 body { font-family: 'Kumbh Sans', sans-serif; }
 div, a, p { color: #666666; }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
 a:hover {
-	color: #b70000;
+	color: var(--red);
 	text-decoration: none;
 }
+
 
 .container-fluid { margin-left: 0; }
 
 .btn-primary {
-	padding: 12px 50px;
-    border-radius: 0;
-    background: #b70000;
+	padding: 12px 20px;
+    border-radius: 25px;
+    background: var(--red);
     font-size: 1.2rem;
     border: 0;
 }
 
 .btn-primary:hover { background: #068ccf; }
-.tm-text-primary { color: #b70000; }
+.tm-text-primary { color: var(--red); }
 .tm-text-secondary { color: #009999; }
 hr { border-top: 4px solid #CCC; }
 
 .tm-hr-short {
-	border-top: 1px solid #b70000;
+	border-top: 1px solid var(--red);
 	width: 238px;
 	margin-left: auto;
 	margin-right: auto;
@@ -129,7 +134,7 @@ hr { border-top: 4px solid #CCC; }
 .tm-brand-box {
 	width: 260px;
     height: 180px;
-    background: #b70000;
+    background: var(--red);
     color: white;
     display: flex;
     align-items: center;
@@ -153,7 +158,7 @@ hr { border-top: 4px solid #CCC; }
 
 .nav-link {
 	position: relative;
-	color: #b70000;
+	color: var(--red);
 	font-size: 1.4rem;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -166,7 +171,7 @@ hr { border-top: 4px solid #CCC; }
 	width: 0;
 	height: 0;
 	border-top: 21px solid transparent;
-	border-left: 20px solid #b70000;
+	border-left: 20px solid var(--red);
 	border-bottom: 21px solid transparent;
 	opacity: 0;
 	transition: all 0.3s ease;
@@ -175,7 +180,7 @@ hr { border-top: 4px solid #CCC; }
 .nav-item:hover .nav-link,
 .nav-link.current {
 	background-color: #F2F2F2;
-	color: #b70000;
+	color: var(--red);
 	padding-left: 30px;
 }
 
@@ -257,7 +262,7 @@ hr { border-top: 4px solid #CCC; }
 
 .tm-gallery-link {
 	padding: 15px;
-	color: #b70000;	
+	color: var(--red);	
 }
 
 .tm-gallery-link.active { color: #666666; }
@@ -285,7 +290,7 @@ hr { border-top: 4px solid #CCC; }
 
 a.tm-paging-link.active,
 a.tm-paging-link:hover {
-    background: #b70000;
+    background: var(--red);
     color: white;
 }
 
@@ -398,7 +403,7 @@ figure.effect-honey figcaption::before {
 	left: 0;
 	width: 100%;
 	height: 10px;
-	background: #b70000;
+	background: var(--red);
 	content: '';
 	-webkit-transform: translate3d(0,10px,0);
 	transform: translate3d(0,10px,0);
@@ -521,7 +526,7 @@ figure.effect-honey:hover ul li a {
 .slick-dots li button:hover:before, 
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
-    color: #b70000;
+    color: var(--red);
 }
 
 .tm-carousel {
